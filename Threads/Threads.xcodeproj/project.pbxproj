@@ -14,6 +14,8 @@
 		293E0EE51C5CC8DF008503CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 293E0EE31C5CC8DF008503CE /* LaunchScreen.storyboard */; };
 		293E0EEE1C5CCA25008503CE /* MenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 293E0EED1C5CCA25008503CE /* MenuController.m */; };
 		293E0EF11C5CD4C8008503CE /* PushTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 293E0EF01C5CD4C8008503CE /* PushTransitionAnimator.m */; };
+		293E0EF51C5CE0EF008503CE /* FibonachiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 293E0EF41C5CE0EF008503CE /* FibonachiManager.m */; };
+		293E0EF91C5CE43B008503CE /* Task1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 293E0EF81C5CE43B008503CE /* Task1ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,10 @@
 		293E0EED1C5CCA25008503CE /* MenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuController.m; sourceTree = "<group>"; };
 		293E0EEF1C5CD4C8008503CE /* PushTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushTransitionAnimator.h; sourceTree = "<group>"; };
 		293E0EF01C5CD4C8008503CE /* PushTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushTransitionAnimator.m; sourceTree = "<group>"; };
+		293E0EF31C5CE0EF008503CE /* FibonachiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FibonachiManager.h; sourceTree = "<group>"; };
+		293E0EF41C5CE0EF008503CE /* FibonachiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FibonachiManager.m; sourceTree = "<group>"; };
+		293E0EF71C5CE43B008503CE /* Task1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Task1ViewController.h; sourceTree = "<group>"; };
+		293E0EF81C5CE43B008503CE /* Task1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Task1ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,17 +67,19 @@
 		293E0ED41C5CC8DF008503CE /* Threads */ = {
 			isa = PBXGroup;
 			children = (
+				293E0EF61C5CE41C008503CE /* Task1 */,
+				293E0EF21C5CE0C4008503CE /* Managers */,
 				293E0ED81C5CC8DF008503CE /* AppDelegate.h */,
 				293E0ED91C5CC8DF008503CE /* AppDelegate.m */,
 				293E0EEC1C5CCA25008503CE /* MenuController.h */,
 				293E0EED1C5CCA25008503CE /* MenuController.m */,
+				293E0EEF1C5CD4C8008503CE /* PushTransitionAnimator.h */,
+				293E0EF01C5CD4C8008503CE /* PushTransitionAnimator.m */,
 				293E0EDE1C5CC8DF008503CE /* Main.storyboard */,
 				293E0EE11C5CC8DF008503CE /* Assets.xcassets */,
 				293E0EE31C5CC8DF008503CE /* LaunchScreen.storyboard */,
 				293E0EE61C5CC8DF008503CE /* Info.plist */,
 				293E0ED51C5CC8DF008503CE /* Supporting Files */,
-				293E0EEF1C5CD4C8008503CE /* PushTransitionAnimator.h */,
-				293E0EF01C5CD4C8008503CE /* PushTransitionAnimator.m */,
 			);
 			path = Threads;
 			sourceTree = "<group>";
@@ -82,6 +90,24 @@
 				293E0ED61C5CC8DF008503CE /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		293E0EF21C5CE0C4008503CE /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				293E0EF31C5CE0EF008503CE /* FibonachiManager.h */,
+				293E0EF41C5CE0EF008503CE /* FibonachiManager.m */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		293E0EF61C5CE41C008503CE /* Task1 */ = {
+			isa = PBXGroup;
+			children = (
+				293E0EF71C5CE43B008503CE /* Task1ViewController.h */,
+				293E0EF81C5CE43B008503CE /* Task1ViewController.m */,
+			);
+			name = Task1;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +181,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				293E0EF51C5CE0EF008503CE /* FibonachiManager.m in Sources */,
+				293E0EF91C5CE43B008503CE /* Task1ViewController.m in Sources */,
 				293E0EDA1C5CC8DF008503CE /* AppDelegate.m in Sources */,
 				293E0EF11C5CD4C8008503CE /* PushTransitionAnimator.m in Sources */,
 				293E0EEE1C5CCA25008503CE /* MenuController.m in Sources */,

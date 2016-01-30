@@ -14,8 +14,9 @@
 // synchronize with the main animation.
 - (NSTimeInterval)transitionDuration:(nullable id <UIViewControllerContextTransitioning>)transitionContext {
     
-    return 0.5;
+    return 0.5f;
 }
+
 // This method can only  be a nop if the transition is interactive and not a percentDriven interactive transition.
 - (void)animateTransition:(id <UIViewControllerContextTransitioning>)transitionContext {
 
@@ -25,15 +26,14 @@
     toViewController.view.alpha = 0;
     
     [UIView animateWithDuration:[self transitionDuration:transitionContext] animations:^{
-        fromViewController.view.transform = CGAffineTransformMakeScale(0.3f, 0.3f);
+        CGAffineTransform scale = CGAffineTransformMakeScale(0.3f, 0.3f);
+        CGAffineTransform rotate = CGAffineTransformMakeRotation(M_PI);
+        fromViewController.view.transform = CGAffineTransformConcat(scale, rotate);
         toViewController.view.alpha = 1;
     } completion:^(BOOL finished) {
         fromViewController.view.transform = CGAffineTransformIdentity;
         [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
-        
     }];
 }
-
-
 
 @end
