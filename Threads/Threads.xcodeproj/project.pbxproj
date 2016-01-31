@@ -16,6 +16,8 @@
 		293E0EF11C5CD4C8008503CE /* PushTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 293E0EF01C5CD4C8008503CE /* PushTransitionAnimator.m */; };
 		293E0EF51C5CE0EF008503CE /* FibonachiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 293E0EF41C5CE0EF008503CE /* FibonachiManager.m */; };
 		293E0EF91C5CE43B008503CE /* Task1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 293E0EF81C5CE43B008503CE /* Task1ViewController.m */; };
+		29A4FB411C5E767D00826C84 /* Task3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29A4FB401C5E767D00826C84 /* Task3ViewController.m */; };
+		29A4FB441C5E833C00826C84 /* CustomImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 29A4FB431C5E833C00826C84 /* CustomImageCell.m */; };
 		29C95E9E1C5E18A400CEE041 /* Task2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C95E9D1C5E18A400CEE041 /* Task2ViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +38,10 @@
 		293E0EF41C5CE0EF008503CE /* FibonachiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FibonachiManager.m; sourceTree = "<group>"; };
 		293E0EF71C5CE43B008503CE /* Task1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Task1ViewController.h; sourceTree = "<group>"; };
 		293E0EF81C5CE43B008503CE /* Task1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Task1ViewController.m; sourceTree = "<group>"; };
+		29A4FB3F1C5E767D00826C84 /* Task3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Task3ViewController.h; sourceTree = "<group>"; };
+		29A4FB401C5E767D00826C84 /* Task3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Task3ViewController.m; sourceTree = "<group>"; };
+		29A4FB421C5E833C00826C84 /* CustomImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomImageCell.h; sourceTree = "<group>"; };
+		29A4FB431C5E833C00826C84 /* CustomImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomImageCell.m; sourceTree = "<group>"; };
 		29C95E9C1C5E18A400CEE041 /* Task2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Task2ViewController.h; sourceTree = "<group>"; };
 		29C95E9D1C5E18A400CEE041 /* Task2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Task2ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,6 +76,7 @@
 		293E0ED41C5CC8DF008503CE /* Threads */ = {
 			isa = PBXGroup;
 			children = (
+				29A4FB3E1C5E6C8A00826C84 /* Task3 */,
 				29C95E9B1C5E188800CEE041 /* Task2 */,
 				293E0EF61C5CE41C008503CE /* Task1 */,
 				293E0EF21C5CE0C4008503CE /* Managers */,
@@ -112,6 +119,17 @@
 				293E0EF81C5CE43B008503CE /* Task1ViewController.m */,
 			);
 			name = Task1;
+			sourceTree = "<group>";
+		};
+		29A4FB3E1C5E6C8A00826C84 /* Task3 */ = {
+			isa = PBXGroup;
+			children = (
+				29A4FB3F1C5E767D00826C84 /* Task3ViewController.h */,
+				29A4FB401C5E767D00826C84 /* Task3ViewController.m */,
+				29A4FB421C5E833C00826C84 /* CustomImageCell.h */,
+				29A4FB431C5E833C00826C84 /* CustomImageCell.m */,
+			);
+			name = Task3;
 			sourceTree = "<group>";
 		};
 		29C95E9B1C5E188800CEE041 /* Task2 */ = {
@@ -199,6 +217,8 @@
 				293E0EDA1C5CC8DF008503CE /* AppDelegate.m in Sources */,
 				293E0EF11C5CD4C8008503CE /* PushTransitionAnimator.m in Sources */,
 				293E0EEE1C5CCA25008503CE /* MenuController.m in Sources */,
+				29A4FB441C5E833C00826C84 /* CustomImageCell.m in Sources */,
+				29A4FB411C5E767D00826C84 /* Task3ViewController.m in Sources */,
 				293E0ED71C5CC8DF008503CE /* main.m in Sources */,
 				29C95E9E1C5E18A400CEE041 /* Task2ViewController.m in Sources */,
 			);
