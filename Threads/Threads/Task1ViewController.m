@@ -48,6 +48,10 @@
 
 - (IBAction)startFibCalculation:(UIBarButtonItem *)sender {
     
+    self.fibArray = nil;
+    self.fibArray = [NSMutableArray array];
+    [self.table reloadData];
+    
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     dispatch_async(queue, ^{
         
