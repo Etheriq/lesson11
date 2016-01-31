@@ -1,26 +1,26 @@
 //
-//  Task1ViewController.m
+//  Task2ViewController.m
 //  Threads
 //
-//  Created by Yuriy T on 30.01.16.
+//  Created by Yuriy T on 31.01.16.
 //  Copyright © 2016 Yuriy T. All rights reserved.
 //
 
-#import "Task1ViewController.h"
+#import "Task2ViewController.h"
 #import "FibonachiManager.h"
 
-@interface Task1ViewController ()
+@interface Task2ViewController ()
 
 @property(strong, nonatomic) NSMutableArray *fibArray;
 @property (weak, nonatomic) IBOutlet UITableView *table;
 
 @end
 
-@implementation Task1ViewController
+@implementation Task2ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     self.fibArray = [NSMutableArray array];
 }
 
@@ -43,16 +43,16 @@
     return cell;
 }
 
-#pragma mark - Action
+#pragma mark - Actions
 
-- (IBAction)startFibCalculation:(UIBarButtonItem *)sender {
+- (IBAction)task2Fire:(UIBarButtonItem *)sender {
     
     self.fibArray = nil;
     self.fibArray = [NSMutableArray array];
     [self.table reloadData];
     
-    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
-    dispatch_async(queue, ^{
+    NSOperationQueue *queue = [NSOperationQueue new];
+    NSBlockOperation *blockOperation = [NSBlockOperation blockOperationWithBlock:^{
         
         int  step = 0;
         
@@ -70,19 +70,25 @@
             if (step == 10) {
                 [self.fibArray addObject: result];
                 
-                NSInteger index =  [self.fibArray count] - 1;
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    [self.table beginUpdates];
-                    [self.table insertRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:index inSection:0]] withRowAnimation:[self.fibArray count] % 2 ? UITableViewRowAnimationLeft : UITableViewRowAnimationRight];
-                    
-                    [self.table endUpdates];
-                });
+                [self performSelectorOnMainThread:@selector(insertRowIntoTable) withObject:nil waitUntilDone:NO];
+                
                 step = 0;
             }
             step++;
-            [NSThread sleepForTimeInterval:0.05f];
+            [NSThread sleepForTimeInterval:0.01f];
         }
-    });
+        
+    }];
+    
+    [queue addOperation:blockOperation];
+}
+
+-(void) insertRowIntoTable {
+    NSInteger index =  [self.fibArray count] - 1;
+    
+    [self.table beginUpdates];
+    [self.table insertRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:index inSection:0]] withRowAnimation:[self.fibArray count] % 2 ? UITableViewRowAnimationLeft : UITableViewRowAnimationRight];
+    [self.table endUpdates];
 }
 
 @end

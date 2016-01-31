@@ -16,6 +16,7 @@
 		293E0EF11C5CD4C8008503CE /* PushTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 293E0EF01C5CD4C8008503CE /* PushTransitionAnimator.m */; };
 		293E0EF51C5CE0EF008503CE /* FibonachiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 293E0EF41C5CE0EF008503CE /* FibonachiManager.m */; };
 		293E0EF91C5CE43B008503CE /* Task1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 293E0EF81C5CE43B008503CE /* Task1ViewController.m */; };
+		29C95E9E1C5E18A400CEE041 /* Task2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C95E9D1C5E18A400CEE041 /* Task2ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		293E0EF41C5CE0EF008503CE /* FibonachiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FibonachiManager.m; sourceTree = "<group>"; };
 		293E0EF71C5CE43B008503CE /* Task1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Task1ViewController.h; sourceTree = "<group>"; };
 		293E0EF81C5CE43B008503CE /* Task1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Task1ViewController.m; sourceTree = "<group>"; };
+		29C95E9C1C5E18A400CEE041 /* Task2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Task2ViewController.h; sourceTree = "<group>"; };
+		29C95E9D1C5E18A400CEE041 /* Task2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Task2ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,7 @@
 		293E0ED41C5CC8DF008503CE /* Threads */ = {
 			isa = PBXGroup;
 			children = (
+				29C95E9B1C5E188800CEE041 /* Task2 */,
 				293E0EF61C5CE41C008503CE /* Task1 */,
 				293E0EF21C5CE0C4008503CE /* Managers */,
 				293E0ED81C5CC8DF008503CE /* AppDelegate.h */,
@@ -108,6 +112,15 @@
 				293E0EF81C5CE43B008503CE /* Task1ViewController.m */,
 			);
 			name = Task1;
+			sourceTree = "<group>";
+		};
+		29C95E9B1C5E188800CEE041 /* Task2 */ = {
+			isa = PBXGroup;
+			children = (
+				29C95E9C1C5E18A400CEE041 /* Task2ViewController.h */,
+				29C95E9D1C5E18A400CEE041 /* Task2ViewController.m */,
+			);
+			name = Task2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +200,7 @@
 				293E0EF11C5CD4C8008503CE /* PushTransitionAnimator.m in Sources */,
 				293E0EEE1C5CCA25008503CE /* MenuController.m in Sources */,
 				293E0ED71C5CC8DF008503CE /* main.m in Sources */,
+				29C95E9E1C5E18A400CEE041 /* Task2ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +349,7 @@
 				293E0EEB1C5CC8DF008503CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
